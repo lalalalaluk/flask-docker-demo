@@ -6,4 +6,4 @@ COPY . .
 
 RUN pip install -r requirements.txt
 
-CMD python main.py
+CMD --bind=0.0.0.0:8000 wsgi:app
